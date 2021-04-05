@@ -1,0 +1,21 @@
+{
+  "name": "@woznial/gridsome-plugin-imagify",
+  "version": "0.0.1",
+  "description": "Gridsome plugin to convert local paths to image objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gridsome-plugin",
+    "image"
+  ],
+  "author": "Lukasz Wozniak",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "gridsome": "^0.7.23",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7"
+  }
+}
