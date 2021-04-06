@@ -1,10 +1,17 @@
 {
   "name": "@woznial/gridsome-plugin-imagify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gridsome plugin to convert local paths to image objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stlhrt/gridsome-plugin-imagify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stlhrt/gridsome-plugin-imagify/issues"
   },
   "keywords": [
     "gridsome-plugin",
