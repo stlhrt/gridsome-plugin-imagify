@@ -8,8 +8,12 @@ class ImagifyPlugin {
             imagifyFields: [
                 {
                     contentTypes: [], // content type to process
-                    pathField: null, // property containing local image path
-                    imageField: null // generated property name
+                    mappings: [
+                    //     {
+                    //     pathField: null, // property containing local image path
+                    //     imageField: null // generated property name
+                    // }
+                    ]
                 }
             ]
         }
@@ -26,10 +30,15 @@ class ImagifyPlugin {
 
     processConfigItem(config, actions) {
         config.contentTypes
-            .forEach((contentType) => this.processNode(contentType, config.pathField, config.imageField, actions))
+            .forEach((contentTypeName) => this.processTypeMappings(contentTypeName, config.mappings, actions))
     }
 
-    processNode(contentTypeName, pathField, imageField, actions) {
+    processTypeMappings(contentTypeName, mappings, actions) {
+        mappings.forEach((mapping) => this.processMapping(contentTypeName, mapping, actions))
+    }
+
+    processMapping (contentTypeName, mapping, actions) {
+        const {pathField, imageField} = mapping
         const resolverConfig = {}
         const fieldConfig = {}
         fieldConfig[imageField] = {
