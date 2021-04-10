@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/@woznial/gridsome-plugin-imagify)](https://www.npmjs.com/package/@woznial/gridsome-plugin-imagify)
 # gridsome-plugin-imagify
 >Gridsome plugin converting image paths into Image objects.
 
